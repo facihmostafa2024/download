@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل فيديوهات يوتيوب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>تحميل فيديوهات يوتيوب</h1>
+    <input type="text" id="videoUrl" placeholder="أدخل رابط الفيديو">
+    <button onclick="downloadVideo()">تحميل</button>
+
+    <script>
+        function downloadVideo() {
+            const url = document.getElementById('videoUrl').value;
+            if (url) {
+                // هنا يمكنك إضافة منطق لتحميل الفيديو من يوتيوب.
+                alert('سيتم تحميل الفيديو من: ' + url);
+                // يمكنك استخدام API أو مكتبات JavaScript لتحميل الفيديو.
+            } else {
+                alert('يرجى إدخال رابط فيديو صحيح.');
+            }
+        }
+    </script>
+</body>
+</html>
